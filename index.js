@@ -15,7 +15,7 @@ app.get("/filecreate", (req, res) => {
   fs.mkdir(`./${date}`, function () {
     console.log(`Current Timestamp ${date} Folder Created`);
   });
-  res.json({ message: `Current Timestamp ${date} Folder Created` });
+  res.json({ message: `Current Timestamp ${date}.txt Folder Created` });
 });
 
 app.listen(process.env.PORT || 3003);
