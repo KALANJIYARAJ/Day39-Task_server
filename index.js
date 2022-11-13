@@ -5,7 +5,7 @@ const fs = require("fs");
 const cors = require("cors");
 
 app.use(cors({
-    orgin : "https://famous-basbousa-16f23d.netlify.app/"
+    orgin : "https://famous-basbousa-16f23d.netlify.app"
 }))
 
 app.get("/filecreate", (req, res) => {
