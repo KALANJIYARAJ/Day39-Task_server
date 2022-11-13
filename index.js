@@ -5,7 +5,7 @@ const fs = require("fs");
 const cors = require("cors");
 
 app.use(cors({
-    orgin : "http://localhost:3000"
+    orgin : "https://famous-basbousa-16f23d.netlify.app/"
 }))
 
 app.get("/filecreate", (req, res) => {
@@ -18,4 +18,4 @@ app.get("/filecreate", (req, res) => {
   res.json({ message: `Current Timestamp ${date} Folder Created` });
 });
 
-app.listen(3003);
+app.listen(process.env.PORT || 3003);
